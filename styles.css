@@ -195,3 +195,102 @@ footer {
 html {
     scroll-padding-top: 80px;
 }
+
+/* Parte de estilo del modal */
+.modal-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-purple);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.8);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-purple);
+    padding: 1.2rem 1.5rem;
+}
+
+.modal-header .btn-close {
+    background-color: var(--text-muted);
+    opacity: 0.7;
+    transition: 0.2s;
+}
+.modal-header .btn-close:hover {
+    opacity: 1;
+    background-color: var(--purple-primary);
+    filter: invert(1); /* efecto sutil */
+}
+
+.modal-title {
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, var(--purple-glow));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.modal-body {
+    background-color: var(--bg-dark-alt);
+    padding: 0; /* el iframe ocupa todo el cuerpo */
+    border-radius: 0 0 1rem 1rem;
+}
+
+.modal-body iframe {
+    background-color: #1a1a24;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-purple);
+    background-color: var(--bg-card);
+    justify-content: flex-end;
+    gap: 0.75rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #2a2a3a;
+    border: 1px solid var(--border-purple);
+    color: var(--text-light);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.modal-footer .btn-secondary:hover {
+    background-color: #3a3a50;
+    border-color: var(--purple-primary);
+    transform: translateY(-1px);
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--purple-dark);
+    border: 1px solid var(--purple-primary);
+    color: white;
+    font-weight: 500;
+}
+.modal-footer .btn-primary:hover {
+    background-color: var(--purple-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(123, 46, 223, 0.3);
+}
+
+.modal-footer .btn-purple {
+    background-color: var(--purple-primary);
+    border: none;
+}
+.modal-footer .btn-purple:hover {
+    background-color: var(--purple-glow);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    .modal-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .modal-footer .btn {
+        flex: 1 0 auto;
+    }
+}
