@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalElement = document.getElementById('cvModal');
     const descargarBtn = document.getElementById('descargarCvBtn');
     const abrirNuevaBtn = document.getElementById('abrirNuevaPestanaBtn');
-    const pdfPath = './imagenes/OscarAndresMolinaSilva_CV';
+    const pdfPath = './imagenes/OscarAndresMolinaSilva_TCS';
     
     // Crear el modal
     let cvModal;

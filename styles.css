@@ -191,12 +191,11 @@ footer {
     }
 }
 
-/* Scroll suave adicional */
 html {
     scroll-padding-top: 80px;
 }
 
-/* Parte de estilo del modal */
+/* Modal */
 .modal-content {
     background-color: var(--bg-card);
     border: 1px solid var(--border-purple);
